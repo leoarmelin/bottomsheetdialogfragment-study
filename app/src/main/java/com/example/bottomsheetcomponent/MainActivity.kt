@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         val openBtn: Button = binding.btnActivityMainOpen
 
         openBtn.setOnClickListener {
-            val customBottomSheet = NewBottomSheetDialogFragment(isFullscreen = false)
+            val customBottomSheet = NewBottomSheetDialogFragment(isFullscreen = true)
             customBottomSheet.show(supportFragmentManager, NewBottomSheetDialogFragment.TAG)
         }
     }
